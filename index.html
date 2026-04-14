@@ -4,21 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <script src="teste.js" defer></script>
     <title>Ficha de Pontos</title>
 </head>
 <body>
     <div class="divPai">
         <h1>Ficha do Heroi</h1>
-        <p id="ponto">Pontos: 0</p>
+
+        <input type="text" id="nomeHeroi" name="nome" placeholder="Nome do heroi">
+        <p id="ponto">Pontos restantes: 15</p>
 
         <form class="formulario" action="">
             <label for="ClassesP">Classe:</label>
             <select name="Classes" id="ClassesP">
                 <option value="0" selected>Selecione uma classe</option>
-                <option value="1">Mago</option>
-                <option value="2">Guerreiro</option>
-                <option value="3">Arqueiro</option>
+                <option value="Mago">Mago</option>
+                <option value="Guerreiro">Guerreiro</option>
+                <option value="Arqueiro">Arqueiro</option>
             </select>
             
             <div class="Div_atributos">
@@ -39,12 +41,12 @@
                     <input type="number" id="inteligencia" name="inteligência" min="0" max="100">
                 </div>
             
-            <button>Recrutar Heroi</button>
+            <button onclick="cria_heroi()" id="btnRecruta">Recrutar Heroi</button>
         </form>
 
-        <ul id="herois_criados">
+        <div id="herois_criados">
 
-        </ul>
+        </div>
 
     </div>
 </body>

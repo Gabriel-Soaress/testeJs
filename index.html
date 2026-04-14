@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Ficha de Pontos</title>
+</head>
+<body>
+    <div class="divPai">
+        <h1>Ficha do Heroi</h1>
+        <p id="ponto">Pontos: 0</p>
+
+        <form class="formulario" action="">
+            <label for="ClassesP">Classe:</label>
+            <select name="Classes" id="ClassesP">
+                <option value="0" selected>Selecione uma classe</option>
+                <option value="1">Mago</option>
+                <option value="2">Guerreiro</option>
+                <option value="3">Arqueiro</option>
+            </select>
+            
+            <div class="Div_atributos">
+                <h2>Atributos</h2>
+
+                <div class="campo_form">
+                    <label for="forca">Força:</label>
+                    <input type="number" id="forca" name="força" min="0" max="100">
+                </div>
+
+                <div class="campo_form">
+                    <label for="agilidade">Agilidade:</label>
+                    <input type="number" id="agilidade" name="agilidade" min="0" max="100">
+                </div>
+
+                <div class="campo_form">
+                    <label for="inteligencia">Inteligência:</label>
+                    <input type="number" id="inteligencia" name="inteligência" min="0" max="100">
+                </div>
+            
+            <button>Recrutar Heroi</button>
+        </form>
+
+        <ul id="herois_criados">
+
+        </ul>
+
+    </div>
+</body>
+</html>

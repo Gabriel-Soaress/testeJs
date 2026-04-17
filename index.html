@@ -3,51 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <title>Lab JS</title>
     <script src="teste.js" defer></script>
-    <title>Ficha de Pontos</title>
 </head>
 <body>
-    <div class="divPai">
-        <h1>Ficha do Heroi</h1>
+    <div id="divPai">
+        <div class="divForm">
+                <form id="formulario"action="#">
+                    <label for="Nome">Nome</label>
+                    <input id="nomeIp" name="Nome" type="text">
 
-        <input type="text" id="nomeHeroi" name="nome" placeholder="Nome do heroi">
-        <p id="ponto">Pontos restantes: 15</p>
+                    <label for="Idade">Idade</label>
+                    <input id="idadeIp" name="Idade" type="number">
 
-        <form class="formulario" action="">
-            <label for="ClassesP">Classe:</label>
-            <select name="Classes" id="ClassesP">
-                <option value="0" selected>Selecione uma classe</option>
-                <option value="Mago">Mago</option>
-                <option value="Guerreiro">Guerreiro</option>
-                <option value="Arqueiro">Arqueiro</option>
-            </select>
-            
-            <div class="Div_atributos">
-                <h2>Atributos</h2>
+                    <label for="Data">Data</label>
+                    <input id="dataIp" name="Data" type="date">
 
-                <div class="campo_form">
-                    <label for="forca">Força:</label>
-                    <input type="number" id="forca" name="força" min="0" max="100">
-                </div>
+                    <label for="Email">email</label>
+                    <input id="emailIp" name="Email" type="email">
 
-                <div class="campo_form">
-                    <label for="agilidade">Agilidade:</label>
-                    <input type="number" id="agilidade" name="agilidade" min="0" max="100">
-                </div>
-
-                <div class="campo_form">
-                    <label for="inteligencia">Inteligência:</label>
-                    <input type="number" id="inteligencia" name="inteligência" min="0" max="100">
-                </div>
-            
-            <button onclick="cria_heroi()" id="btnRecruta">Recrutar Heroi</button>
-        </form>
-
-        <div id="herois_criados">
-
+                    <button onclick="pegarValores()" type="button" class="botao_g">Salvar</button>
+                </form>
         </div>
-
     </div>
 </body>
 </html>

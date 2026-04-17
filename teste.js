@@ -17,7 +17,7 @@ function pegarValores(){
     const cardDados = document.createElement('div')
     cardDados.classList.add('card_dados') //usamos o classlist aq pq ele permite adicionar ou remover classes simutaneas, o classname substitui apenas
 
-    const cardDadosTitulo = document.createElement('h1')
+    const cardDadosTitulo = document.createElement('p')
     cardDadosTitulo.classList.add('card_dadosPar')
     cardDadosTitulo.innerText = `${nomeV}`
 
@@ -38,7 +38,7 @@ function pegarValores(){
     cardDados.appendChild(cardDadosIdade)
     cardDados.appendChild(cardDadosEmail)
 
-    divPai.appendChild(cardDados)
+    document.getElementById('divCards').appendChild(cardDados)
 
     formulario.reset();
 }

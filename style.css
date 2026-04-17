@@ -1,0 +1,70 @@
+body{
+    background-color: black;
+}
+
+#divPai{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+}
+
+.divForm{
+    width: 25vw;
+    background-color: white;
+    padding: 2vh;
+    border-radius: 1vh;
+}
+
+
+#formulario{
+    display: flex;
+    flex-direction: column;
+}
+
+#formulario label{
+    margin-top: 10px;
+}
+#formulario input{
+    padding: 8px;
+    border-radius: 10px;
+    border: solid 1px rgb(179, 176, 176);
+}
+
+#formulario input:focus{
+    outline: none;
+    border: solid 1px blue;
+    transition:all 1s;
+}
+
+
+
+#formulario button{
+    margin-top: 15px;
+    width: 5vw;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: blue;
+    color:white;
+}
+
+#formulario button:hover{
+    background-color: rgb(133, 133, 255);
+}
+
+#divCards{
+    width: 25vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2vh;
+    flex-wrap: wrap;
+}
+.card_dados{
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+    
+}
